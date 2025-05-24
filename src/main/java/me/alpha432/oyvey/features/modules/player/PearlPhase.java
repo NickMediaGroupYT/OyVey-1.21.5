@@ -10,8 +10,8 @@ import net.minecraft.util.math.Vec3d;
 
 public class PearlPhase extends Module {
 
-    private final Setting<Boolean> swing = register(new Setting<>("Swing", true));
-    private final Setting<Integer> pitch = register(new Setting<>("Pitch", 86, 70, 90));
+    public Setting<Boolean> swing = register(new Setting<>("Swing", true));
+    public Setting<Integer> pitch = register(new Setting<>("Pitch", 86, 70, 90));
 
     public PearlPhase() {
         super("PearlPhase", "Phases into blocks with pearl", Category.PLAYER, true, false, false);
