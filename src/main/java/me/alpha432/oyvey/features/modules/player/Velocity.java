@@ -26,7 +26,7 @@ public class Velocity extends Module {
     public Setting<Float> vertical = new Setting<>("Vertical", 0f, 0f, 100f);
 
     public Velocity() {
-        super("Velocity", "Cancels or reduces velocity", Category.COMBAT, true, false, false);
+        super("Velocity", "Cancels or reduces velocity", Category.PLAYER, true, false, false);
     }
 
     @EventHandler
