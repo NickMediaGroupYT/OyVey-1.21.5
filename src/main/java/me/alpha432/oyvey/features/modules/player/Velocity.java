@@ -19,11 +19,11 @@ public class Velocity extends Module {
         NORMAL, GRIM, GRIM_V3, WALLS
     }
 
-    public Setting<Boolean> knockback = new Setting<>("Knockback", true);
-    public Setting<Boolean> explosion = new Setting<>("Explosion", true);
-    public Setting<Enum<?>> mode = new Setting<>("Mode", VelocityMode.NORMAL);
-    public Setting<Float> horizontal = new Setting<>("Horizontal", 0f, 0f, 100f);
-    public Setting<Float> vertical = new Setting<>("Vertical", 0f, 0f, 100f);
+    public Setting<Boolean> knockback = register(new Setting<>("Knockback", true));
+    public Setting<Boolean> explosion = register(new Setting<>("Explosion", true));
+    public Setting<Enum<?>> mode = register(new Setting<>("Mode", VelocityMode.NORMAL));
+    public Setting<Float> horizontal = register(new Setting<>("Horizontal", 0f, 0f, 100f));
+    public Setting<Float> vertical = register(new Setting<>("Vertical", 0f, 0f, 100f));
 
     public Velocity() {
         super("Velocity", "Cancels or reduces velocity", Category.PLAYER, true, false, false);
