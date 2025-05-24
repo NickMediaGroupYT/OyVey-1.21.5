@@ -10,12 +10,12 @@ import org.apache.logging.log4j.Logger;
 
 public class OyVey implements ModInitializer, ClientModInitializer {
     public static final EventBus EVENT_BUS = new EventBus();
-    public static final String NAME = "GuardianWare";
-    public static final String VERSION = "v18 - " + SharedConstants.getGameVersion().getName();
+    public static final String NAME = "OyVey";
+    public static final String VERSION = "0.0.3 - " + SharedConstants.getGameVersion().getName();
 
     public static float TIMER = 1f;
 
-    public static final Logger LOGGER = LogManager.getLogger("GuardianWare");
+    public static final Logger LOGGER = LogManager.getLogger("OyVey");
     public static ServerManager serverManager;
     public static ColorManager colorManager;
     public static RotationManager rotationManager;
