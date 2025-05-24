@@ -39,6 +39,8 @@ public class KillAura extends Module {
             if (playersOnly.getValue() && !(entity instanceof PlayerEntity)) continue;
             if (entity.isInvisible()) continue;
 
+            if (entity instanceof PlayerEntity && isFriend((PlayerEntity) entity)) continue;
+
             double distance = mc.player.distanceTo(entity);
             if (distance < minDistance) {
                 minDistance = distance;
