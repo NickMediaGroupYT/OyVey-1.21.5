@@ -9,6 +9,7 @@ import me.alpha432.oyvey.features.modules.Module;
 import me.alpha432.oyvey.features.modules.client.ClickGui;
 import me.alpha432.oyvey.features.modules.client.HudModule;
 import me.alpha432.oyvey.features.modules.combat.*;
+import me.alpha432.oyvey.features.modules.misc.FakePlayer;
 import me.alpha432.oyvey.features.modules.misc.MCF;
 import me.alpha432.oyvey.features.modules.movement.ReverseStep;
 import me.alpha432.oyvey.features.modules.movement.Step;
@@ -49,6 +50,7 @@ public class ModuleManager implements Jsonable, Util {
         modules.add(new AutoCrystal());
         modules.add(new Offhand());
         modules.add(new PearlPhase());
+        modules.add(new FakePlayer());
     }
 
     public Module getModuleByName(String name) {
