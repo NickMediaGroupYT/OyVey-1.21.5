@@ -45,6 +45,7 @@ public class ModuleManager implements Jsonable, Util {
         modules.add(new AutoMine());
         modules.add(new Surround());
         modules.add(new KillAura());
+        modules.add(new AutoCrystal());
     }
 
     public Module getModuleByName(String name) {
