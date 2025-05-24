@@ -1,5 +1,6 @@
 package me.alpha432.oyvey.features.modules.combat;
 
+import me.alpha432.oyvey.OyVey;
 import me.alpha432.oyvey.features.modules.Module;
 import me.alpha432.oyvey.features.settings.Setting;
 import me.alpha432.oyvey.util.render.RenderUtil;
@@ -123,8 +124,7 @@ public class AutoMine extends Module {
     }
 
     private boolean isFriend(PlayerEntity player) {
-        // Replace this with your friend check logic
-        return false;
+        return OyVey.friendManager.isFriend(player);
     }
 
     @Override

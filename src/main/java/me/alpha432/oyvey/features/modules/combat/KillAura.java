@@ -1,5 +1,6 @@
 package me.alpha432.oyvey.features.modules.combat;
 
+import me.alpha432.oyvey.OyVey;
 import me.alpha432.oyvey.features.modules.Module;
 import me.alpha432.oyvey.features.settings.Setting;
 import net.minecraft.client.network.ClientPlayerEntity;
@@ -51,5 +52,9 @@ public class KillAura extends Module {
                 mc.player.swingHand(Hand.MAIN_HAND);
             }
         }
+    }
+
+    private boolean isFriend(PlayerEntity player) {
+        return OyVey.friendManager.isFriend(player);
     }
 }

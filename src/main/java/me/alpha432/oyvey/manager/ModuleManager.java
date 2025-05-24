@@ -8,10 +8,7 @@ import me.alpha432.oyvey.features.Feature;
 import me.alpha432.oyvey.features.modules.Module;
 import me.alpha432.oyvey.features.modules.client.ClickGui;
 import me.alpha432.oyvey.features.modules.client.HudModule;
-import me.alpha432.oyvey.features.modules.combat.AutoMine;
-import me.alpha432.oyvey.features.modules.combat.Burrow;
-import me.alpha432.oyvey.features.modules.combat.Criticals;
-import me.alpha432.oyvey.features.modules.combat.Surround;
+import me.alpha432.oyvey.features.modules.combat.*;
 import me.alpha432.oyvey.features.modules.misc.MCF;
 import me.alpha432.oyvey.features.modules.movement.ReverseStep;
 import me.alpha432.oyvey.features.modules.movement.Step;
@@ -47,6 +44,7 @@ public class ModuleManager implements Jsonable, Util {
         modules.add(new Burrow());
         modules.add(new AutoMine());
         modules.add(new Surround());
+        modules.add(new KillAura());
     }
 
     public Module getModuleByName(String name) {
