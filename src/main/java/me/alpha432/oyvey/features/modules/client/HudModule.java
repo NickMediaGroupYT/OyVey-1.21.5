@@ -48,7 +48,7 @@ public class HudModule extends Module {
                 event.getContext().drawTextWithShadow(
                         mc.textRenderer,
                         name,
-                        screenWidth - width - 2, 2,
+                        screenWidth - width - 2, y,
                         -1
                 );
                 y += mc.textRenderer.fontHeight + 2;
